@@ -9,7 +9,17 @@ def main():
     try:
         flag=0
         #creating object of fileio wich contains all of our features
-        obj=fileio()
+        #if user wants to initialize path or change path 
+        #example path is like -
+        #E:\project\Freshworks
+        #do not provide file name 
+        #program will automatically create a data.txt file if not there
+        print("Enter Path Of data store (Optinal), Press Enter If You Dont Want To Enter")
+        path=input()
+        if (len(path)>0):
+            obj=fileio(path)
+        else:
+            obj=fileio()
 
         #clear function will start a thread every second to check and delete json objects with epired time_to_live
         def clear():
@@ -26,7 +36,7 @@ def main():
             print("1. Create")
             print("2. Read")
             print("3. Delete")
-            print("4. Change Directory/ Initialize Path")
+            # print("4. Change Directory/ Initialize Path")
             print("-1 For  exit")
 
             #taking user_input
@@ -90,10 +100,10 @@ def main():
             #E:\project\Freshworks
             #do not provide file name 
             #program will automatically create a data.txt file if not there
-            elif (user_input=='4'):
-                print("Enter Directory Path")
-                path=input()
-                obj=fileio(path)
+            # elif (user_input=='4'):
+            #     print("Enter Directory Path")
+            #     path=input()
+            #     obj=fileio(path)
 
 
             #condition for break
