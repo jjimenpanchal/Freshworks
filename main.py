@@ -5,13 +5,16 @@ import datetime
 import threading
 
 #main 
-if __name__ == '__main__':
+def main():
     try:
+        flag=0
         #creating object of fileio wich contains all of our features
         obj=fileio()
 
         #clear function will start a thread every second to check and delete json objects with epired time_to_live
         def clear():
+            if flag==-1:
+                return
             obj.delete_expired_data()
             threading.Timer(1,clear).start() #starting a thread eveery second
         
@@ -95,12 +98,18 @@ if __name__ == '__main__':
 
             #condition for break
             elif (user_input=='-1'):
+                flag=-1
                 break
 
 
             #handling wrong input
             else:
                 print("Invalid Input (-1 for exit)")
+        return 
     except:
         print("Something Went Wrong Run Again")
+
+if __name__ == '__main__':
+    main()
+    
 
