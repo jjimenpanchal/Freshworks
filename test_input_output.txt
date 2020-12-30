@@ -1,0 +1,208 @@
+Microsoft Windows [Version 10.0.18363.1256]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+E:\project\Freshworks>python main.py
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+4
+Enter Directory Path
+E:\project
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+1
+Enter Key Name
+18u257
+Do You Want To Enter Time-To-Live Property (Enter Integer From Following)
+1. Yes
+2. No
+1
+Enter Number Of Seconds
+1000
+Enter Json Object In Key Value Pair Enter -1 As A Key To Break
+Enter Json Object Key, -1 To Break
+name
+Enter Json Object Value
+jimen
+Enter Json Object Key, -1 To Break
+phone 8003323973
+Enter Json Object Value
+yes
+Enter Json Object Key, -1 To Break
+-1
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u257
+{'name': 'jimen', 'phone 8003323973': 'yes'}
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+1
+Enter Key Name
+18u257
+Do You Want To Enter Time-To-Live Property (Enter Integer From Following)
+1. Yes
+2. No
+1
+Enter Number Of Seconds
+100
+Enter Json Object In Key Value Pair Enter -1 As A Key To Break
+Enter Json Object Key, -1 To Break
+name
+Enter Json Object Value
+nikhil
+Enter Json Object Key, -1 To Break
+phone
+Enter Json Object Value
+9784222088
+Enter Json Object Key, -1 To Break
+-1
+Key is already available
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u258
+no data with this key
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u257
+{'name': 'jimen', 'phone 8003323973': 'yes'}
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+1
+Enter Key Name
+18u258
+Do You Want To Enter Time-To-Live Property (Enter Integer From Following)
+1. Yes
+2. No
+1
+Enter Number Of Seconds
+60
+Enter Json Object In Key Value Pair Enter -1 As A Key To Break
+Enter Json Object Key, -1 To Break
+name
+Enter Json Object Value
+nikhil
+Enter Json Object Key, -1 To Break
+phone
+Enter Json Object Value
+7986111455
+Enter Json Object Key, -1 To Break
+-1
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u258
+{'name': 'nikhil', 'phone': '7986111455'}
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+3
+Enter Key To be deleted
+18u257
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u257
+no data with this key
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u258
+{'name': 'nikhil', 'phone': '7986111455'}
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u257
+no data with this key
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+2
+Enter Key
+18u258
+no data with this key 
+********MENU********
+Enter Integer From Following
+1. Create
+2. Read
+3. Delete
+4. Change Directory/ Initialize Path
+-1 For  exit
+-1
+
+
+
+//in the last for read operation of 18u257 
+//output is "no data with this key " because we enteren time_to_live as 100 seconds
+//and after 100 seconds it got deleted
